@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Br0-A2-Axw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Tweets Table View Controller-->
+        <scene sceneID="0BW-87-5ha">
+            <objects>
+                <tableViewController id="Br0-A2-Axw" customClass="TweetsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="202" sectionHeaderHeight="28" sectionFooterHeight="28" id="YdF-8u-eC1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCellId" rowHeight="202" id="3ha-65-UK2" customClass="TweetTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="202"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3ha-65-UK2" id="0qf-Xm-fJq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="201"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-lf-QKz">
+                                            <rect key="frame" x="0.0" y="1" width="600" height="200"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NM9-kn-6Jk">
+                                                    <rect key="frame" x="0.0" y="1" width="200" height="200"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="NM9-kn-6Jk" secondAttribute="height" multiplier="1:1" id="ka5-lv-HGo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeL-Ha-iUo">
+                                                    <rect key="frame" x="200" y="1" width="400" height="200"/>
+                                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="NM9-kn-6Jk" secondAttribute="bottom" id="6mH-YF-O5G"/>
+                                                <constraint firstItem="xeL-Ha-iUo" firstAttribute="width" secondItem="WJU-lf-QKz" secondAttribute="width" multiplier="2:3" id="G4r-Ef-CJg"/>
+                                                <constraint firstItem="NM9-kn-6Jk" firstAttribute="width" secondItem="WJU-lf-QKz" secondAttribute="width" multiplier="1:3" id="I4D-7u-NpK"/>
+                                                <constraint firstItem="xeL-Ha-iUo" firstAttribute="top" secondItem="WJU-lf-QKz" secondAttribute="top" id="KLh-yp-fZV"/>
+                                                <constraint firstItem="xeL-Ha-iUo" firstAttribute="leading" secondItem="NM9-kn-6Jk" secondAttribute="trailing" id="Qp7-k3-3p3"/>
+                                                <constraint firstItem="NM9-kn-6Jk" firstAttribute="top" secondItem="WJU-lf-QKz" secondAttribute="top" id="Yie-TK-Vxi"/>
+                                                <constraint firstAttribute="trailing" secondItem="xeL-Ha-iUo" secondAttribute="trailing" id="e1g-Ov-Q12"/>
+                                                <constraint firstAttribute="bottom" secondItem="xeL-Ha-iUo" secondAttribute="bottom" id="emq-BM-4K1"/>
+                                                <constraint firstItem="xeL-Ha-iUo" firstAttribute="leading" secondItem="NM9-kn-6Jk" secondAttribute="trailing" id="kN8-9S-MJz"/>
+                                                <constraint firstItem="NM9-kn-6Jk" firstAttribute="leading" secondItem="WJU-lf-QKz" secondAttribute="leading" id="vHT-gj-bL3"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WJU-lf-QKz" firstAttribute="leading" secondItem="0qf-Xm-fJq" secondAttribute="leading" id="ALU-yi-WGG"/>
+                                        <constraint firstAttribute="trailing" secondItem="WJU-lf-QKz" secondAttribute="trailing" id="LG0-1r-A30"/>
+                                        <constraint firstItem="WJU-lf-QKz" firstAttribute="top" secondItem="0qf-Xm-fJq" secondAttribute="top" id="uJ8-d3-oBi"/>
+                                        <constraint firstAttribute="bottom" secondItem="WJU-lf-QKz" secondAttribute="bottom" id="yoK-UE-YWh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ContentLabelView" destination="xeL-Ha-iUo" id="IcP-be-Anp"/>
+                                    <outlet property="ProfileImageView" destination="NM9-kn-6Jk" id="a32-fR-zrv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Br0-A2-Axw" id="18B-yh-jcu"/>
+                            <outlet property="delegate" destination="Br0-A2-Axw" id="zDM-3l-Eyo"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRD-Xq-Jr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="416"/>
+        </scene>
+    </scenes>
+</document>

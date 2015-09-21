@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D791C767200934B1F2A81E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB012B42FDDEFC0D5CFAA57 /* libPods.a */; };
+		C0CCC1E31BB0508500AF4750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC1E21BB0508500AF4750 /* main.m */; };
+		C0CCC1E61BB0508500AF4750 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC1E51BB0508500AF4750 /* AppDelegate.m */; };
+		C0CCC1EC1BB0508500AF4750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CCC1EA1BB0508500AF4750 /* Main.storyboard */; };
+		C0CCC1EE1BB0508500AF4750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CCC1ED1BB0508500AF4750 /* Assets.xcassets */; };
+		C0CCC1F11BB0508500AF4750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CCC1EF1BB0508500AF4750 /* LaunchScreen.storyboard */; };
+		C0CCC1FC1BB0508600AF4750 /* XtremeTweetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC1FB1BB0508600AF4750 /* XtremeTweetsTests.m */; };
+		C0CCC2071BB0508600AF4750 /* XtremeTweetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC2061BB0508600AF4750 /* XtremeTweetsUITests.m */; };
+		C0CCC2161BB056CB00AF4750 /* TweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC2151BB056CB00AF4750 /* TweetsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C0CCC2191BB0591000AF4750 /* TweetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC2181BB0591000AF4750 /* TweetTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		C0CCC21C1BB0889F00AF4750 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC21B1BB0889F00AF4750 /* NetworkManager.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0CCC1F81BB0508600AF4750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CCC1D61BB0508500AF4750 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CCC1DD1BB0508500AF4750;
+			remoteInfo = XtremeTweets;
+		};
+		C0CCC2031BB0508600AF4750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CCC1D61BB0508500AF4750 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CCC1DD1BB0508500AF4750;
+			remoteInfo = XtremeTweets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A4457F93748F63499D71F7D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4045D980C6501F7AF012B2EB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB012B42FDDEFC0D5CFAA57 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CCC1DE1BB0508500AF4750 /* XtremeTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XtremeTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CCC1E21BB0508500AF4750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0CCC1E41BB0508500AF4750 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0CCC1E51BB0508500AF4750 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0CCC1EB1BB0508500AF4750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0CCC1ED1BB0508500AF4750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0CCC1F01BB0508500AF4750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0CCC1F21BB0508500AF4750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CCC1F71BB0508600AF4750 /* XtremeTweetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XtremeTweetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CCC1FB1BB0508600AF4750 /* XtremeTweetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XtremeTweetsTests.m; sourceTree = "<group>"; };
+		C0CCC1FD1BB0508600AF4750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CCC2021BB0508600AF4750 /* XtremeTweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XtremeTweetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CCC2061BB0508600AF4750 /* XtremeTweetsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XtremeTweetsUITests.m; sourceTree = "<group>"; };
+		C0CCC2081BB0508600AF4750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CCC2141BB056CB00AF4750 /* TweetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsTableViewController.h; sourceTree = "<group>"; };
+		C0CCC2151BB056CB00AF4750 /* TweetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsTableViewController.m; sourceTree = "<group>"; };
+		C0CCC2171BB0591000AF4750 /* TweetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetTableViewCell.h; sourceTree = "<group>"; };
+		C0CCC2181BB0591000AF4750 /* TweetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTableViewCell.m; sourceTree = "<group>"; };
+		C0CCC21A1BB0889F00AF4750 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		C0CCC21B1BB0889F00AF4750 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0CCC1DB1BB0508500AF4750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D791C767200934B1F2A81E1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CCC1F41BB0508600AF4750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CCC1FF1BB0508600AF4750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66C6A7F74BFCA10D7B9BB0A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4045D980C6501F7AF012B2EB /* Pods.debug.xcconfig */,
+				0A4457F93748F63499D71F7D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EFDA15C839ACD6754940FE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CB012B42FDDEFC0D5CFAA57 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0CCC1D51BB0508500AF4750 = {
+			isa = PBXGroup;
+			children = (
+				C0CCC1E01BB0508500AF4750 /* XtremeTweets */,
+				C0CCC1FA1BB0508600AF4750 /* XtremeTweetsTests */,
+				C0CCC2051BB0508600AF4750 /* XtremeTweetsUITests */,
+				C0CCC1DF1BB0508500AF4750 /* Products */,
+				66C6A7F74BFCA10D7B9BB0A6 /* Pods */,
+				9EFDA15C839ACD6754940FE7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0CCC1DF1BB0508500AF4750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0CCC1DE1BB0508500AF4750 /* XtremeTweets.app */,
+				C0CCC1F71BB0508600AF4750 /* XtremeTweetsTests.xctest */,
+				C0CCC2021BB0508600AF4750 /* XtremeTweetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0CCC1E01BB0508500AF4750 /* XtremeTweets */ = {
+			isa = PBXGroup;
+			children = (
+				C0CCC1E41BB0508500AF4750 /* AppDelegate.h */,
+				C0CCC1E51BB0508500AF4750 /* AppDelegate.m */,
+				C0CCC1EA1BB0508500AF4750 /* Main.storyboard */,
+				C0CCC1ED1BB0508500AF4750 /* Assets.xcassets */,
+				C0CCC1EF1BB0508500AF4750 /* LaunchScreen.storyboard */,
+				C0CCC1F21BB0508500AF4750 /* Info.plist */,
+				C0CCC1E11BB0508500AF4750 /* Supporting Files */,
+				C0CCC2141BB056CB00AF4750 /* TweetsTableViewController.h */,
+				C0CCC2151BB056CB00AF4750 /* TweetsTableViewController.m */,
+				C0CCC2171BB0591000AF4750 /* TweetTableViewCell.h */,
+				C0CCC2181BB0591000AF4750 /* TweetTableViewCell.m */,
+				C0CCC21A1BB0889F00AF4750 /* NetworkManager.h */,
+				C0CCC21B1BB0889F00AF4750 /* NetworkManager.m */,
+			);
+			path = XtremeTweets;
+			sourceTree = "<group>";
+		};
+		C0CCC1E11BB0508500AF4750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0CCC1E21BB0508500AF4750 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0CCC1FA1BB0508600AF4750 /* XtremeTweetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0CCC1FB1BB0508600AF4750 /* XtremeTweetsTests.m */,
+				C0CCC1FD1BB0508600AF4750 /* Info.plist */,
+			);
+			path = XtremeTweetsTests;
+			sourceTree = "<group>";
+		};
+		C0CCC2051BB0508600AF4750 /* XtremeTweetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0CCC2061BB0508600AF4750 /* XtremeTweetsUITests.m */,
+				C0CCC2081BB0508600AF4750 /* Info.plist */,
+			);
+			path = XtremeTweetsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0CCC1DD1BB0508500AF4750 /* XtremeTweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CCC20B1BB0508600AF4750 /* Build configuration list for PBXNativeTarget "XtremeTweets" */;
+			buildPhases = (
+				B424CA4E9672E00458A5EE04 /* Check Pods Manifest.lock */,
+				C0CCC1DA1BB0508500AF4750 /* Sources */,
+				C0CCC1DB1BB0508500AF4750 /* Frameworks */,
+				C0CCC1DC1BB0508500AF4750 /* Resources */,
+				56DE37DB5D5AC1922E9DDD5F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XtremeTweets;
+			productName = XtremeTweets;
+			productReference = C0CCC1DE1BB0508500AF4750 /* XtremeTweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0CCC1F61BB0508600AF4750 /* XtremeTweetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CCC20E1BB0508600AF4750 /* Build configuration list for PBXNativeTarget "XtremeTweetsTests" */;
+			buildPhases = (
+				C0CCC1F31BB0508600AF4750 /* Sources */,
+				C0CCC1F41BB0508600AF4750 /* Frameworks */,
+				C0CCC1F51BB0508600AF4750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CCC1F91BB0508600AF4750 /* PBXTargetDependency */,
+			);
+			name = XtremeTweetsTests;
+			productName = XtremeTweetsTests;
+			productReference = C0CCC1F71BB0508600AF4750 /* XtremeTweetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0CCC2011BB0508600AF4750 /* XtremeTweetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CCC2111BB0508600AF4750 /* Build configuration list for PBXNativeTarget "XtremeTweetsUITests" */;
+			buildPhases = (
+				C0CCC1FE1BB0508600AF4750 /* Sources */,
+				C0CCC1FF1BB0508600AF4750 /* Frameworks */,
+				C0CCC2001BB0508600AF4750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CCC2041BB0508600AF4750 /* PBXTargetDependency */,
+			);
+			name = XtremeTweetsUITests;
+			productName = XtremeTweetsUITests;
+			productReference = C0CCC2021BB0508600AF4750 /* XtremeTweetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0CCC1D61BB0508500AF4750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Pivotal Labs";
+				TargetAttributes = {
+					C0CCC1DD1BB0508500AF4750 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C0CCC1F61BB0508600AF4750 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C0CCC1DD1BB0508500AF4750;
+					};
+					C0CCC2011BB0508600AF4750 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C0CCC1DD1BB0508500AF4750;
+					};
+				};
+			};
+			buildConfigurationList = C0CCC1D91BB0508500AF4750 /* Build configuration list for PBXProject "XtremeTweets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0CCC1D51BB0508500AF4750;
+			productRefGroup = C0CCC1DF1BB0508500AF4750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0CCC1DD1BB0508500AF4750 /* XtremeTweets */,
+				C0CCC1F61BB0508600AF4750 /* XtremeTweetsTests */,
+				C0CCC2011BB0508600AF4750 /* XtremeTweetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0CCC1DC1BB0508500AF4750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CCC1F11BB0508500AF4750 /* LaunchScreen.storyboard in Resources */,
+				C0CCC1EE1BB0508500AF4750 /* Assets.xcassets in Resources */,
+				C0CCC1EC1BB0508500AF4750 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CCC1F51BB0508600AF4750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CCC2001BB0508600AF4750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56DE37DB5D5AC1922E9DDD5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B424CA4E9672E00458A5EE04 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0CCC1DA1BB0508500AF4750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CCC2161BB056CB00AF4750 /* TweetsTableViewController.m in Sources */,
+				C0CCC1E61BB0508500AF4750 /* AppDelegate.m in Sources */,
+				C0CCC2191BB0591000AF4750 /* TweetTableViewCell.m in Sources */,
+				C0CCC1E31BB0508500AF4750 /* main.m in Sources */,
+				C0CCC21C1BB0889F00AF4750 /* NetworkManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CCC1F31BB0508600AF4750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CCC1FC1BB0508600AF4750 /* XtremeTweetsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CCC1FE1BB0508600AF4750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CCC2071BB0508600AF4750 /* XtremeTweetsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0CCC1F91BB0508600AF4750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CCC1DD1BB0508500AF4750 /* XtremeTweets */;
+			targetProxy = C0CCC1F81BB0508600AF4750 /* PBXContainerItemProxy */;
+		};
+		C0CCC2041BB0508600AF4750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CCC1DD1BB0508500AF4750 /* XtremeTweets */;
+			targetProxy = C0CCC2031BB0508600AF4750 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0CCC1EA1BB0508500AF4750 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0CCC1EB1BB0508500AF4750 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0CCC1EF1BB0508500AF4750 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0CCC1F01BB0508500AF4750 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0CCC2091BB0508600AF4750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0CCC20A1BB0508600AF4750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0CCC20C1BB0508600AF4750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4045D980C6501F7AF012B2EB /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XtremeTweets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xtremelabs.XtremeTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0CCC20D1BB0508600AF4750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4457F93748F63499D71F7D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XtremeTweets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xtremelabs.XtremeTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C0CCC20F1BB0508600AF4750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XtremeTweetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xtremelabs.XtremeTweetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XtremeTweets.app/XtremeTweets";
+			};
+			name = Debug;
+		};
+		C0CCC2101BB0508600AF4750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XtremeTweetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xtremelabs.XtremeTweetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XtremeTweets.app/XtremeTweets";
+			};
+			name = Release;
+		};
+		C0CCC2121BB0508600AF4750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XtremeTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xtremelabs.XtremeTweetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XtremeTweets;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C0CCC2131BB0508600AF4750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XtremeTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xtremelabs.XtremeTweetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XtremeTweets;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0CCC1D91BB0508500AF4750 /* Build configuration list for PBXProject "XtremeTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CCC2091BB0508600AF4750 /* Debug */,
+				C0CCC20A1BB0508600AF4750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CCC20B1BB0508600AF4750 /* Build configuration list for PBXNativeTarget "XtremeTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CCC20C1BB0508600AF4750 /* Debug */,
+				C0CCC20D1BB0508600AF4750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CCC20E1BB0508600AF4750 /* Build configuration list for PBXNativeTarget "XtremeTweetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CCC20F1BB0508600AF4750 /* Debug */,
+				C0CCC2101BB0508600AF4750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CCC2111BB0508600AF4750 /* Build configuration list for PBXNativeTarget "XtremeTweetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CCC2121BB0508600AF4750 /* Debug */,
+				C0CCC2131BB0508600AF4750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0CCC1D61BB0508500AF4750 /* Project object */;
+}
