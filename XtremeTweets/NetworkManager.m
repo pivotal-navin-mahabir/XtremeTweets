@@ -36,6 +36,7 @@ static NSString * const letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQR
 - (KSPromise *)getTweetsForHashtag:(NSString *) hashtag {
     __block KSDeferred * deferred = [KSDeferred defer];
     __weak NetworkManager * weakself=self;
+    hashtag = [self URLEncodedString_ch: hashtag];
     if(self.bearerToken==nil) {
         NSURLRequest *request = [self constructBearerRequest];
         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];

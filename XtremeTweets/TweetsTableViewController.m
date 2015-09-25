@@ -13,7 +13,9 @@
 #import "Tweet.h"
 
 @interface TweetsTableViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UITextField *searchBox;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *tweets;
 @property (nonatomic) NetworkManager * networkManager;
 @end
@@ -77,6 +79,20 @@
         return nil;
     }];
 }
+- (IBAction)searchButtonTapped:(id)sender {
+    NSString * searchKey = self.searchBox.text;
+    __weak TweetsTableViewController * weakSelf = self;
+    [[self.networkManager getTweetsForHashtag:searchKey] then:^id(NSArray * tweets) {
+        weakSelf.tweets = tweets;
+        [weakSelf.tableView reloadData];
+        return nil;
+    } error:^id(NSError *error) {
+        UIAlertController * errorAlert = [UIAlertController alertControllerWithTitle: @"Error" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+        [weakSelf presentViewController:errorAlert animated:YES completion:nil];
+        return nil;
+    }];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
