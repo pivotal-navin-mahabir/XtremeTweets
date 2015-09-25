@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+
+
 @class KSPromise;
+
 @interface NetworkManager : NSObject
--(KSPromise *) getTweetsForHashtags: (NSString *) hashtag;
+
+-(KSPromise *) getTweetsForHashtag: (NSString *) hashtag;
+
 @end

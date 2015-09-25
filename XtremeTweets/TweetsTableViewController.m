@@ -8,20 +8,30 @@
 
 #import "TweetsTableViewController.h"
 #import "TweetTableViewCell.h"
+#import "NetworkManager.h"
+#import "KSPromise.h"
+#import "Tweet.h"
 
 @interface TweetsTableViewController ()
 
 @property (nonatomic) NSArray *tweets;
-
+@property (nonatomic) NetworkManager * networkManager;
 @end
 
 @implementation TweetsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.tweets = @[@"hi", @"navin"];
-    
+    self.networkManager = [[NetworkManager alloc] init];
+    [[self.networkManager getTweetsForHashtag:@"flyingtoaster0"] then:^id(NSArray * tweets) {
+        self.tweets = tweets;
+        [self.tableView reloadData];
+        return nil;
+    } error:^id(NSError *error) {
+        UIAlertController * errorAlert = [UIAlertController alertControllerWithTitle: @"Error" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:errorAlert animated:YES completion:nil];
+        return nil;
+    }];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -50,11 +60,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TweetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCellId" forIndexPath:indexPath];
-    
-    cell.ContentLabelView.text=self.tweets[indexPath.row];
+    cell.ProfileImageView.image=[UIImage imageNamed:@"Face"];
+    cell.ContentLabelView.text=((Tweet *)self.tweets[indexPath.row]).status;
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    __weak TweetsTableViewController * weakSelf = self;
+    [[self.networkManager getTweetsForHashtag:@"%23drake"] then:^id(NSArray * tweets) {
+       weakSelf.tweets = tweets;
+       [weakSelf.tableView reloadData];
+       return nil;
+    } error:^id(NSError *error) {
+        UIAlertController * errorAlert = [UIAlertController alertControllerWithTitle: @"Error" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+        [weakSelf presentViewController:errorAlert animated:YES completion:nil];
+        return nil;
+    }];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

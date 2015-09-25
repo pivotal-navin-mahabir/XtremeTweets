@@ -18,6 +18,7 @@
 		C0CCC2161BB056CB00AF4750 /* TweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC2151BB056CB00AF4750 /* TweetsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C0CCC2191BB0591000AF4750 /* TweetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC2181BB0591000AF4750 /* TweetTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C0CCC21C1BB0889F00AF4750 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC21B1BB0889F00AF4750 /* NetworkManager.m */; settings = {ASSET_TAGS = (); }; };
+		C0CCC21F1BB596B600AF4750 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCC21E1BB596B600AF4750 /* Tweet.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		C0CCC2181BB0591000AF4750 /* TweetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTableViewCell.m; sourceTree = "<group>"; };
 		C0CCC21A1BB0889F00AF4750 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		C0CCC21B1BB0889F00AF4750 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		C0CCC21D1BB596B600AF4750 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		C0CCC21E1BB596B600AF4750 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				C0CCC2181BB0591000AF4750 /* TweetTableViewCell.m */,
 				C0CCC21A1BB0889F00AF4750 /* NetworkManager.h */,
 				C0CCC21B1BB0889F00AF4750 /* NetworkManager.m */,
+				C0CCC21D1BB596B600AF4750 /* Tweet.h */,
+				C0CCC21E1BB596B600AF4750 /* Tweet.m */,
 			);
 			path = XtremeTweets;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 			files = (
 				C0CCC2161BB056CB00AF4750 /* TweetsTableViewController.m in Sources */,
 				C0CCC1E61BB0508500AF4750 /* AppDelegate.m in Sources */,
+				C0CCC21F1BB596B600AF4750 /* Tweet.m in Sources */,
 				C0CCC2191BB0591000AF4750 /* TweetTableViewCell.m in Sources */,
 				C0CCC1E31BB0508500AF4750 /* main.m in Sources */,
 				C0CCC21C1BB0889F00AF4750 /* NetworkManager.m in Sources */,
